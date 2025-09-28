@@ -28,12 +28,7 @@ The dataset contains the following variables:
 
 ## 🛠️ Tools & Libraries
 
-- ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)  
-- ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)  
-- ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)  
-- ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=plotly&logoColor=white)  
-- ![Seaborn](https://img.shields.io/badge/Seaborn-9ECAE1?style=for-the-badge&logo=seaborn&logoColor=black)  
-- ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white) 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=plotly&logoColor=white) ![Seaborn](https://img.shields.io/badge/Seaborn-9ECAE1?style=for-the-badge&logo=seaborn&logoColor=black) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white) 
 
 ---
 
@@ -70,15 +65,16 @@ The dataset contains the following variables:
 
 5. **Confusion Matrix Explanation**
    ```python
-   print('Patient without Heart Disease Correctly Detected (True Negatives): ', cm[0][0])
-   print('Incorrectly Detected as Heart Disease (False Positives): ', cm[0][1])
-   print('Heart Disease Patient Missed (False Negatives): ', cm[1][0])
-   print('Heart Disease Patient Correctly Detected (True Positives): ', cm[1][1])
-   print('Total Heart Disease Patients: ', np.sum(cm[1]))
-   print('Sensitivity (Recall): ', cm[1][1] / (cm[1][1] + cm[1][0]))
-   print('Specificity: ', cm[0][0] / (cm[0][0] + cm[0][1]))
+   Patient with Not Heart Disease Correctly Detected (True Negatives):  21
+   Incorrectly Detected (False Positives):  7
+   Heart Disease Patient Missed (False Negatives):  1
+   Heart Disease Detected (True Positives):  32
+   Total Heart Disease:  33
+   Sensitivy:  0.9696969696969697
+   Specificity:  0.75
 
 ---
+
 📈 Results
 - Best Model: SVM Linear Kernel with 86.88% accuracy
 - Feature importance highlighted age, max heart rate (thalach), cholesterol (chol), and ST depression (oldpeak) as strong predictors.
